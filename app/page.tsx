@@ -1,65 +1,324 @@
 import Image from "next/image";
+import styles from "./page.module.css"
 
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+export default function homePage() {
+    return (
+        <div className={styles.wrapper}>
+            {/* Header Container */}
+            <header className={styles.headerContainer}>
+                <div className={styles.headerInner}>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Landing</a></li>
+                    </ul>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/logo.png"
+                            alt="Next.js logo"
+                            width={213}
+                            height={20}
+                            priority
+                        />
+                    </div>
+                    <div></div>
+                </div>
+                <div className={styles.headerInner2}>
+                    <h6>Willie house in Bergen</h6>
+                    <p>Architecture <b>heritade</b></p>
+                </div>
+            </header>
+            {/* Elementor1 */}
+            <section className={styles.elementor1}>
+                <ul>
+                    <li>Architect studio</li>
+                </ul>
+                <div className={styles.elementor1Top}>
+                    <p>Architects excited about beauty, affordability sustainability materialsfor every project and person</p>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-img-01.jpg"
+                            alt="Next.js logo"
+                            width={708}
+                            height={354}
+                            priority
+                        />
+                    </div>
+                </div>
+                <div className={styles.elementor1Bottom}>
+                    <div className={styles.elementor1BottomP}>
+                        <p>Lorem, ipsum dolor in.</p>
+                        <p>Lorem ipsum dolor siting</p>
+                        <p>Lorem ipsum dolor sit, amet consecte</p>
+                    </div>
+                    <div>
+                        <h6>Urban Exteriors</h6>
+                        <p>Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim diam quis enim. Quis auctor.</p>
+                    </div>
+                    <div>
+                        <h6>Cityscapes Buildings</h6>
+                        <p>Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim diam quis enim. Quis auctor.</p>
+                    </div>
+                </div>
+            </section>
+            {/* Elementor2 */}
+            <section className={styles.elementor2}>
+                <div className={styles.elementor2Element}>
+                    <div className={styles.elementor2btm}>
+                        <ul>
+                            <li>Our Work</li>
+                        </ul>
+                        <div>
+                            <h5>Nomus Art House</h5>
+                            <p>Wellness</p>
+                        </div>
+                    </div>
+                    <div className={styles.elementor2Img}>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-port-img-02.jpg"
+                            alt="Next.js logo"
+                            width={708}
+                            height={354}
+                            priority
+                        />
+
+                        <Image
+                            className="dark:invert"
+                            src="/h1-port-img-03-1.jpg"
+                            alt="Next.js logo"
+                            width={708}
+                            height={354}
+                            priority
+                        />
+                    </div>
+                </div>
+            </section>
+            {/* Elementor3 */}
+            <section className={styles.elementor3}>
+                <div className={styles.elementor3Inner}>
+                    <div className={styles.elementor3Inners}>
+
+                        <div className={styles.elementorInner}>
+
+                        </div>
+                        <div className={styles.elementorInner}>
+
+                        </div>
+                        <div className={styles.elementorInner}>
+
+                        </div>
+                        <div className={styles.elementorInner}>
+
+                        </div>
+                    </div>
+                    <div className={styles.elementorInnerImg}>
+                        <div>
+                            <Image
+                                className="dark:invert"
+                                src="/h1-img-07.jpg"
+                                alt="Next.js logo"
+                                width={608}
+                                height={204}
+                                priority
+                            />
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                    </div>
+                </div>
+            </section>
+            {/* Elementor4 */}
+            <section className={styles.elementor4}>
+                {/* <div>
+                    <Image
+                        className="dark:invert"
+                        src="/section.elementor-section.jpg"
+                        alt="Next.js logo"
+                        width={608}
+                        height={204}
+                        priority
+                    />
+                </div> */}
+                <p>The whimsical feel of Villa Esther begins <br /> with the Neo-Modern gateway in the <br />style of Le Corbuser  Villa Savoye.</p>
+            </section>
+            {/* Elementor4 */}
+            <section className={styles.elementor5}>
+                <div className={styles.elementor5content}>
+
+                </div>
+                <div className={styles.elementor5Team}>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-team-img-01.jpg"
+                            alt="Next.js logo"
+                            width={250}
+                            height={250}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.elementor5TeamName}>
+                        <h5>Robert Jhonson</h5>
+                        <p>CEO/ ARCHITECT</p>
+                    </div>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-team-img-02.jpg"
+                            alt="Next.js logo"
+                            width={250}
+                            height={250}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.elementor5TeamName}>
+                        <h5>Aida Betul</h5>
+                        <p>MAIN CONTRACTOR</p>
+                    </div>
+                    <div className={styles.elementor5Team3}>
+                        <p>black color</p>
+                    </div>
+                    <div className={styles.elementor5Team4}>
+
+                    </div>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-team-img-03.jpg"
+                            alt="Next.js logo"
+                            width={250}
+                            height={250}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.elementor5TeamName}>
+                        <h5>Rebecca Wales</h5>
+                        <p>ARCHITECT</p>
+                    </div>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/h1-team-img-04.jpg"
+                            alt="Next.js logo"
+                            width={250}
+                            height={250}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.elementor5TeamName}>
+                        <h5>Guillermo Medici</h5>
+                        <p>PRODUCT DESIGNER</p>
+                    </div>
+                </div>
+                <div className={styles.elementor5content}></div>
+            </section>
+            {/* Elementor6 */}
+            <section className={styles.elementor6}>
+                <h6>Lorem ipsum justo eget magna. Qui varius quam quisque id. Amet justo donec enim diam vulputate ut pharetra sit. Nunc eget lorem nus sed mas.</h6>
+                <p>Anna Johnson, Architect / green projects</p>
+                <h5>___ <b>_____</b> ___</h5>
+            </section>
+            {/* Elementor7 */}
+            <section className={styles.elementor7}>
+                <div className={styles.elementor7content}>
+                    <Image
+                        className="dark:invert"
+                        src="/blog-4.jpg"
+                        alt="Next.js logo"
+                        width={433}
+                        height={302}
+                        priority
+                    />
+                    <h6>Studio Hiroshi Cuisine And Bar Innovative Interior Design</h6>
+                    <p>interviews <b>December 14, 2022</b></p>
+                </div>
+                <div className={styles.elementor7content}>
+                    <Image
+                        className="dark:invert"
+                        src="/blog-3.jpg"
+                        alt="Next.js logo"
+                        width={433}
+                        height={522}
+                        priority
+                    />
+                    <h6>Zara Madid Speaking About Her Influence And Creative Vision</h6>
+                    <p>interviews <b>December 14, 2022</b></p>
+                </div>
+                <div className={styles.elementor7content}>
+                    <Image
+                        className="dark:invert"
+                        src="/blog-2.jpg"
+                        alt="Next.js logo"
+                        width={433}
+                        height={302}
+                        priority
+                    />
+                    <h6>Glass Wall Facade And How To Design It With AluProfiles</h6>
+                    <p>interviews <b>December 14, 2022</b></p>
+                </div>
+                <div className={styles.elementor7content}>
+                    <Image
+                        className="dark:invert"
+                        src="/blog-1.jpg"
+                        alt="Next.js logo"
+                        width={433}
+                        height={522}
+                        priority
+                    />
+                    <h6>Coexisting With The Landscape Is The Main Rule</h6>
+                    <p>interviews <b>December 14, 2022</b></p>
+                </div>
+            </section>
+            {/* Elementor8 */}
+            <section className={styles.elementor8}>
+                <p>Lets make something beautiful together</p>
+                <button>black</button>
+            </section><hr />
+            {/* Elementor9 */}
+            <footer className={styles.elementor9}>
+                <div className={styles.elementor9top}>
+                    <div>
+                        <Image
+                            className="dark:invert"
+                            src="/hiroshi-logo-big-2.png"
+                            alt="Next.js logo"
+                            width={100}
+                            height={20}
+                            priority
+                        />
+                    </div>
+                    <div></div>
+                    <div>
+                        <h1>Social</h1>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem.</p>
+                    </div>
+                    <div>
+                        <h1>Info</h1>
+                        <p>Lorem.</p>
+                        <p>Lorem ipsum dolor sit intro.</p>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div>
+                        <h1>Contact</h1>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div className={styles.elementor9bottom}>
+                    <div>
+                        <h1>© 2023 <b>qodeinteractive</b></h1>
+                    </div>
+                </div>
+            </footer>
+            {/* End of Wrapper */}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    )
 }
