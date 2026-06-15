@@ -8,12 +8,12 @@ export default function homePage() {
             <header className={styles.headerContainer}>
                 <div className={styles.headerInner}>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Landing</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#page">Pages</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#landing">Landing</a></li>
                     </ul>
                     <div>
                         <Image
@@ -25,7 +25,6 @@ export default function homePage() {
                             priority
                         />
                     </div>
-                    <div></div>
                 </div>
                 <div className={styles.headerInner2}>
                     <h6>Willie house in Bergen</h6>
@@ -33,7 +32,7 @@ export default function homePage() {
                 </div>
             </header>
             {/* Elementor1 */}
-            <section className={styles.elementor1}>
+            <section className={styles.home} id="home">
                 <ul>
                     <li>Architect studio</li>
                 </ul>
@@ -67,7 +66,7 @@ export default function homePage() {
                 </div>
             </section>
             {/* Elementor2 */}
-            <section className={styles.elementor2}>
+            <section className={styles.page} id="page">
                 <div className={styles.elementor2Element}>
                     <div className={styles.elementor2btm}>
                         <ul>
@@ -100,7 +99,7 @@ export default function homePage() {
                 </div>
             </section>
             {/* Elementor3 */}
-            <section className={styles.elementor3}>
+            <section className={styles.portfolio} id="portfolio">
                 <div className={styles.elementor3Inner}>
                     <div className={styles.elementor3Inners}>
 
@@ -133,7 +132,7 @@ export default function homePage() {
                 </div>
             </section>
             {/* Elementor4 */}
-            <section className={styles.elementor4}>
+            <section className={styles.shop} id="shop">
                 {/* <div>
                     <Image
                         className="dark:invert"
@@ -146,8 +145,8 @@ export default function homePage() {
                 </div> */}
                 <p>The whimsical feel of Villa Esther begins <br /> with the Neo-Modern gateway in the <br />style of Le Corbuser  Villa Savoye.</p>
             </section>
-            {/* Elementor4 */}
-            <section className={styles.elementor5}>
+            {/* Elementor5 */}
+            <section className={styles.blog} id="blog">
                 <div className={styles.elementor5content}>
 
                 </div>
@@ -224,7 +223,7 @@ export default function homePage() {
                 <h5>___ <b>_____</b> ___</h5>
             </section>
             {/* Elementor7 */}
-            <section className={styles.elementor7}>
+            <section className={styles.landing} id="landing">
                 <div className={styles.elementor7content}>
                     <Image
                         className="dark:invert"

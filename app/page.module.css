@@ -1,39 +1,62 @@
-.headerContainer{
+.headerContainer {
     background-image: url(/h1-port-img-02-1.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    padding: 30px 60px;
+    padding-top: 0;
+    
 }
 
 .headerInner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px 60px;
-    color: #FFFFFF;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    margin-top: 0;
 }
 
-.headerInner2{
+.headerInner ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    position: fixed;
+    background-color: rgba(28, 71, 103, 0.8);
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    right: 20px;
+    left: 0;
+}
+
+.headerInner ul a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.headerInner2 {
     position: absolute;
     right: 20px;
     bottom: 20px;
     color: #FFFFFF;
 }
 
-.headerInner2 h6{
+.headerInner2 h6 {
     font-size: 24px;
 }
 
-.elementor1{
+.home {
     margin: 30px 60px;
 }
 
-.elementor1 li{
+.elementor1 li {
     list-style: circle;
 }
 
-.elementor1Top{
-    background-image: url(/public/section.elementor-section.png);
+.elementor1Top {
+    background-image: url(/.elementor-section.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,55 +66,55 @@
     padding: 20px 10px;
 }
 
-.elementor1Top p{
+.elementor1Top p {
     align-content: center;
     font-size: 44px;
     font-weight: 400;
     color: #000000;
 }
 
-.elementor1Bottom{
+.elementor1Bottom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 40px 0;
 }
 
-.elementor1Bottom h6{
+.elementor1Bottom h6 {
     font-size: 24px;
     font-weight: 400;
     color: #000000;
 }
 
-.elementor1Bottom p{
+.elementor1Bottom p {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
 }
 
-.elementor1BottomP p{
+.elementor1BottomP p {
     background-color: #000000;
     margin: 20px;
     width: fit-content;
 }
 
-.elementor2{
+.page {
     background-color: #000000;
     color: #FFFFFF;
 }
 
-.elementor2Element{
+.elementor2Element {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 0;
 }
 
-.elementor2Img{
+.elementor2Img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 
-.elementor2btm{
+.elementor2btm {
     display: grid;
     grid-template-rows: 1fr;
     gap: 40px;
@@ -100,40 +123,40 @@
     font-weight: 400;
 }
 
-.elementor2btm h5{
+.elementor2btm h5 {
     font-size: 24px;
     font-weight: 400;
 }
 
-.elementor3{
+.elementor3 {
     margin: 40px 0;
 }
 
-.elementor3Inner{
+.elementor3Inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 20px 10px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
-.elementor3Inners{
+.elementor3Inners {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.elementorInner{
+.elementorInner {
     width: 200px;
     height: 418px;
     border-left: 0.7px solid;
 }
 
-.elementorInnerImg{
+.elementorInnerImg {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.elementorInnerImg p{
+.elementorInnerImg p {
     font-size: 12px;
     font-weight: 400;
     position: relative;
@@ -141,7 +164,7 @@
     margin: 30px;
 }
 
-.elementor4 {
+.shop {
     background-image: url(/section.elementor-section.jpg);
     background-position: center;
     background-size: cover;
@@ -149,66 +172,66 @@
     padding: 30px 60px;
 }
 
-.elementor4 p{
+.shop p {
     position: relative;
     top: 350px;
     color: #FFFFFF;
     font-weight: 400;
 }
 
-.elementor5{
+.blog {
     background-color: #E7E7DA;
     padding: 60px 20px;
 }
 
-.elementor5content{
-    width: 100%;
+.elementor5content {
+    max-width: 100%;
     height: 40px;
     padding: 30px 60px;
 }
 
-.elementor5Team{
+.elementor5Team {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.elementor5TeamName{
+.elementor5TeamName {
     align-content: center;
     padding: 30px;
 }
 
-.elementor5Team3{
+.elementor5Team3 {
     align-content: center;
     text-align: center;
     background-color: #D9D9CA;
 }
 
-.elementor5Team3 p{
+.elementor5Team3 p {
     background-color: #000000;
     text-align: center;
     margin: 70px;
 }
 
-.elementor6{
+.elementor6 {
     align-content: center;
     text-align: center;
     padding: 80px 60px;
 }
 
-.elementor6 h6{
+.elementor6 h6 {
     font-size: 16px;
     font-weight: 400;
     padding: 30px;
 }
 
-.elementor6 p{
+.elementor6 p {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 30px;
 }
 
-.elementor7{
+.landing {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -216,7 +239,7 @@
     padding: 40px 60px;
 }
 
-.elementor7content p{
+.elementor7content p {
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -224,51 +247,123 @@
     margin-top: 20px;
 }
 
-.elementor7content h6{
+.elementor7content h6 {
     font-weight: 400;
     margin-top: 30px;
 }
 
-.elementor8{
+.elementor8 {
     margin: 70px;
     text-align: center;
 }
 
-.elementor8 p{
+.elementor8 p {
     font-size: 45px;
     padding: 30px;
 }
 
-.elementor8 button{
+.elementor8 button {
     background-color: #000000;
 }
 
-.elementor9top{
+.elementor9top {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 40px 60px;
     font-size: 12px;
 }
 
-.elementor9top h1{
+.elementor9top h1 {
     text-transform: uppercase;
     margin: 20px;
 }
 
-.elementor9top p{
+.elementor9top p {
     margin: 20px;
     background-color: #000000;
     width: fit-content;
 }
 
-.elementor9bottom{
+.elementor9bottom {
     margin: 40px 60px;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.elementor9bottom b{
+.elementor9bottom b {
     background-color: #ADADAD;
     color: #ADADAD;
+}
+
+@media (max-width: 580px) {
+    .elementor1Top {
+        grid-template-columns: 1fr;
+    }
+
+    .elementor1Top p {
+        font-size: 34px;
+    }
+
+    .elementor1Bottom {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .elementor1Bottom p {
+        font-size: 15px;
+    }
+
+    .elementor2Element {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .elementor2Img {
+        margin: 30px 40px;
+    }
+
+    .elementor3Inner {
+        grid-template-columns: 1fr;
+    }
+
+    .elementor3Inners {
+        display: none;
+    }
+
+    .elementorInnerImg p{
+        position: relative;
+        top: 0;
+        margin: 30px;
+        font-size: 15px;
+    }
+
+    .elementorInnerImg{
+        grid-template-columns: 1fr;
+    }
+
+    .elementor5Team{
+        grid-template-columns: 1fr;
+    }
+
+    .elementor5Team3{
+        display: none;
+    }
+
+    .elementor5content{
+        display: none;
+    }
+
+    .landing{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .elementor8 p{
+        font-size: 29px;
+    }
+
+    .elementor9top{
+        grid-template-columns: 1fr;
+    }
 }
