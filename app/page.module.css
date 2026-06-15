@@ -296,6 +296,7 @@
     color: #ADADAD;
 }
 
+/* Media Query */
 @media (max-width: 580px) {
     .elementor1Top {
         grid-template-columns: 1fr;
