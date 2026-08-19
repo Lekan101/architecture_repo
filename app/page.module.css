@@ -298,7 +298,12 @@
 
 /* Media Query */
 @media (max-width: 580px) {
-    .elementor1Top {
+    .elementor1Top,
+    .elementor1Bottom,
+    .elementor2Element,
+    .elementor3Inner,
+    .elementorInnerImg,
+    .elementor5Team  {
         grid-template-columns: 1fr;
     }
 
@@ -307,7 +312,6 @@
     }
 
     .elementor1Bottom {
-        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
@@ -316,16 +320,11 @@
     }
 
     .elementor2Element {
-        grid-template-columns: 1fr;
         gap: 3rem;
     }
 
     .elementor2Img {
         margin: 30px 40px;
-    }
-
-    .elementor3Inner {
-        grid-template-columns: 1fr;
     }
 
     .elementor3Inners {
@@ -338,14 +337,14 @@
         margin: 30px;
         font-size: 15px;
     }
-
+/* 
     .elementorInnerImg{
         grid-template-columns: 1fr;
-    }
+    } */
 
-    .elementor5Team{
+    /* .elementor5Team{
         grid-template-columns: 1fr;
-    }
+    } */
 
     .elementor5Team3{
         display: none;
