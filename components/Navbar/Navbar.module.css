@@ -1,0 +1,221 @@
+/* ── Navbar ─────────────────────────────────────────── */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(23, 35, 38, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background-color 0.3s ease;
+}
+
+.navbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 60px;
+}
+
+/* ── Desktop Nav ───────────────────────────────────── */
+
+.desktopNav ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.desktopNav ul li a {
+  display: block;
+  padding: 16px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease, border-radius 0.25s ease;
+  border-radius: 4px;
+}
+
+.desktopNav ul li a:hover {
+  background-color: #ffffff;
+  color: #172326;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Hamburger Button ──────────────────────────────── */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Overlay ───────────────────────────────────────── */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Mobile Menu Panel ─────────────────────────────── */
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: #172326;
+  z-index: 1090;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.mobileMenuOpen {
+  transform: translateX(0);
+}
+
+.mobileMenuHeader {
+  padding: 24px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobileMenuHeader a {
+  display: inline-block;
+}
+
+/* ── Mobile Nav Links ──────────────────────────────── */
+
+.mobileNavLinks {
+  list-style: none;
+  padding: 16px 0;
+  margin: 0;
+  flex: 1;
+}
+
+.mobileNavLinks li {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.mobileNavItemVisible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.mobileNavLinks li a {
+  display: block;
+  padding: 14px 32px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.mobileNavLinks li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-left: 40px;
+  border-left-color: #ffffff;
+}
+
+/* ── Mobile Menu Footer ────────────────────────────── */
+
+.mobileMenuFooter {
+  padding: 24px 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.mobileMenuFooter strong {
+  color: #ffffff;
+}
+
+/* ── Responsive ────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbarInner {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobileMenu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
